@@ -1,0 +1,211 @@
+/*
+*{
+    margin:0;
+    padding:0;
+} */
+
+body{
+    background-color: #f4f4f4; /* background color is the color of the padding portion of the object */
+    color: #555555; /* Color is the color of the actual object specifically the text */
+
+    font-family: Arial, Helvetica, sans-serif; /* Font family is the exact font selection of the website */
+    font-size: 12px; /* Font-size is th exact size of the font of the text underneath the class or ID */
+    font-weight: normal; /* font weight is the thickness of the font */
+    /* same as above */
+    font: normal 16px Arial, Helvetica, sans-serif; /* font: ; is a cleaner way to say all of the essentials of the font class */
+
+    line-height: 1.6em; /* Line height specifies the spacing between the lines */
+    margin:0; /* Margin is the section outside of the padding */
+
+}
+
+a{
+    text-decoration: none; /* Text decoration can add various styles to a plain text */
+    color: #000;
+}
+
+a:hover{ /* The hover attibute to the class explains the act of the active hovering over the object */
+    color: red;
+}
+
+a:active{ /* The active attribute to the class shows the effect of the stimulus of the object being acted upon */
+    color: green;
+}
+
+a:visited{ /* The visited attribute to the class shows the effect of the stimulus of the object once being acted upon */
+    
+}
+
+.container{ /* Container is widely used as a class to set constrictions */
+    width: 80%; /* width is the proportion of the object to the website */
+    margin: auto;
+}
+
+.button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button:hover{
+    background: red;
+    color: #fff;
+}
+
+.clr{
+    clear:both; /* The clear CSS property sets whether an element must be moved below (cleared) floating elements that precede it */
+}
+
+.box-1{
+    background-color: #333333;
+    color: #fff;
+
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+    /* same as above */
+    border: 5px red solid; /* Border specifications */
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    /* same as above */
+    padding: 20px; /* Padding specifications */
+
+    margin-top: 20px;
+    margin: 20px 0;
+}
+
+.box-1 h1{
+    font-family: Tahoma; /* Font specifications down */
+    font-weight: 800px;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase; /* Font specifications up */
+    letter-spacing: 0.2em; /* Spacing between each letter */
+    word-spacing: 1em; /* Spacing between each word */
+}
+
+.box-2{
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0; /* Margin of two values represents top and bottom values compared to left and right values */
+}
+
+.categories{
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px; /* Radius of the curve towords the end of the border to give the curved look */
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0;
+    padding-left: 20px;
+    list-style: square; /* Has multiple attributes. list-style-type:; specficies the type of list-item marker (Default is disc). list-style-position:; specficies the place of list-item marker (Default is outside). list-style-image:; specficies the type of list-item marker (Default is none). */
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url('../images/check.png');
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block; /* sets the way an elements are treated */
+}
+
+.my-form input[type = "text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width:800px;
+    height:500px;
+    border: 1px solid black;
+    margin-top:30px;
+    position: relative;
+    background-image: url('../images/bgimage.jpg');
+
+    background-repeat: no-repeat;
+    background-position: 100px 200px;
+    background-position: center top;
+}
+
+.p-box h1{
+    position:absolute;
+    top:40px;
+    left:200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right:100px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+.my-list li:first-child{
+    background:red;
+}
+
+.my-list li:last-child{
+    background:blue;
+}
+
+.my-list li:nth-child(5){
+    background:yellow;
+}
+
+.my-list li:nth-child(even){
+    background:grey;
+}

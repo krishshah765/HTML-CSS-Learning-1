@@ -1,0 +1,153 @@
+body {
+    font: 15px Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.dark {
+    background: rgb(71, 71, 71);
+    color: #f4f4f4;
+    float: right;
+}
+
+header{
+    background: beige;
+    color: black;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: black 3px solid;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: darkblue;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: darkgray;
+    font-weight: bold;
+}
+
+header #art-brand{
+    float: left;
+}
+
+header #art-brand h1{
+    margin: 0px;
+}
+
+footer {
+    background-color: beige;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#home-page {
+    min-height: 400px;
+    max-height: 1000px;
+    background: url('../images/ART_background.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    background-position: 0px -750px;
+}
+
+
+#home-page h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#home-page p {
+    font-size: 20px;
+}
+
+#home-side-bar {
+    background-color: darkblue;
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.container-1 {
+    display:flex;
+}
+
+.sidebar {
+    margin-top: 1%;
+    margin-left: 12%;
+}
+
+.main-col {
+    margin-top: 1%;
+    background-color: beige;
+}
+
+.sidebar-2 {
+    margin-top: 1%;
+    margin-left: 7%;
+    margin-right: 5%;
+}
+
+.main-col-2 {
+    margin-top: 1%;
+    margin-left: 5%;
+    flex: 2;
+    background-color: beige;
+}
+
+
+.box {
+    background: black;
+    width: 200px;
+    height: 200px;
+    margin-top: 5%;
+    margin-left: 35%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+
+@keyframes myanimation {
+    0% {background-color: black; left: 0px; top: 0px; border-radius: 0 0 0 0; opacity: 100%;}
+    25% {background-color: red; left: 300px; top: 0px; border-radius: 50% 0 0 0; opacity: 75%;}
+    50% {background-color: green; left: 300px; top: 300px; border-radius: 50% 50% 0 0; opacity: 50%;}
+    75% {background-color: blue; left: 0px; top: 300px; border-radius: 50% 50% 50% 0; opacity: 25%;}
+    100% {background-color: black; left: 0px; top: 0px; border-radius: 50% 50% 50% 50%; opacity: 0%;}
+}
